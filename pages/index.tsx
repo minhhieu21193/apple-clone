@@ -22,7 +22,7 @@ const Home = ({ categories, products }: Props) => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Apple Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -53,12 +53,12 @@ const Home = ({ categories, products }: Props) => {
                 </Tab>
               ))}
             </Tab.List>
-            {/* <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4">
+            <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4">
               <Tab.Panel className="tabPanel">{showProducts(0)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(1)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(2)}</Tab.Panel>
               <Tab.Panel className="tabPanel">{showProducts(3)}</Tab.Panel>
-            </Tab.Panels> */}
+            </Tab.Panels>
           </Tab.Group>
         </div>
       </section>

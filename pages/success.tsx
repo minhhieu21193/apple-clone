@@ -68,10 +68,10 @@ function Success({ products }: Props) {
           <Link href="/">
             <div className="relative ml-14 hidden h-24 w-12 cursor-pointer transition lg:inline-flex">
               <Image
+                alt=""
                 src="https://rb.gy/vsvv2o"
                 layout="fill"
                 objectFit="contain"
-                alt=""
               />
             </div>
           </Link>
@@ -164,10 +164,10 @@ function Success({ products }: Props) {
                       <div className="relative flex h-16 w-16 items-center justify-center rounded-md border border-gray-300 bg-[#F1F1F1] text-xs text-white">
                         <div className="relative h-7 w-7 animate-bounce rounded-md">
                           <Image
+                            alt=""
                             src="https://rb.gy/vsvv2o"
                             layout="fill"
                             objectFit="contain"
-                            alt=""
                           />
                         </div>
                         <div className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[gray] text-xs">
@@ -226,6 +226,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
   query,
 }) => {
   const sessionId = query.session_id as string;
+  console.log(sessionId);
   const products = await fetchLineItems(sessionId);
 
   return {
